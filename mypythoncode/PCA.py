@@ -24,12 +24,12 @@ eigenvalues, eigenvectors = linalg.eigh(R)
 eigenvalues = eigenvalues[::-1]
 # 将特征向量矩阵的列按降序排列
 eigenvectors = eigenvectors[:, ::-1]
-
+#agfdaklfa
 # 计算主成分贡献率和累积贡献率
 contribution_rate = eigenvalues / sum(eigenvalues)
 # np.cumsum 是 NumPy 库中的一个函数，用于计算数组元素的累积和。
 cum_contribution_rate = np.cumsum(contribution_rate)
-
+print(cum_contribution_rate)
 # 打印结果
 print('特征值为：')
 print(eigenvalues)
